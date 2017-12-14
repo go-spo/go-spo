@@ -8384,9 +8384,46 @@ a.text-dark:focus, a.text-dark:hover {
 
 
 .form-browser{
+    display:flex;
+    flex-flow:row wrap;
     background-color:#302D2A;
+    border-radius:4px;
+    padding:20px 10px 8px 10px;
 }
 
 .form-group{
-    display:inline-block;
+    justify-content: flex-start;
+    padding:10px;
+}
+
+.form-group-btn{
+    margin-left: auto;
+}
+
+.form-group, .form-group-btn{
+    align-items: center;
+}
+
+@media  (max-width: 766px) {
+    .form-browser{
+        display:block;
+        text-align:center;
+    }
+
+    .select-drop{
+        width:350px !important;
+
+    }
+}
+
+@media  (max-width: 418px) {
+
+    .select-drop{
+        width:250px !important;
+
+    }
+}
+.select-drop{
+    width:250px;
+
 }
