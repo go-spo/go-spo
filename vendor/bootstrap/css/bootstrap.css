@@ -3663,6 +3663,7 @@ tbody.collapse.show {
     flex-grow: 1;
     -ms-flex-align: center;
     align-items: center;
+    text-align: center;
 }
 
 .navbar-toggler {
@@ -8400,6 +8401,9 @@ a.text-dark:focus, a.text-dark:hover {
 
 .form-group-btn{
     margin-left: auto;
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-right:20px;
 }
 
 .form-group, .form-group-btn{
@@ -8432,5 +8436,19 @@ a.text-dark:focus, a.text-dark:hover {
 
 .select-drop{
     width:250px;
+    padding:8px 0px 10px 8px;
+    border-radius:3px;
+}
 
+.btn-browser{
+    width:100px;
+}
+
+.nav-login{
+    background-color:tomato;
+    border: 1px solid tomato;
+    padding:3px 3px 3px 3px;
+    color:white !important;
+    margin-top:4px;
+    margin-left:4px;
 }
