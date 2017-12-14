@@ -8389,6 +8389,8 @@ a.text-dark:focus, a.text-dark:hover {
     background-color:#302D2A;
     border-radius:4px;
     padding:20px 10px 8px 10px;
+    width:700px;
+    margin: 0 auto;
 }
 
 .form-group{
@@ -8408,6 +8410,7 @@ a.text-dark:focus, a.text-dark:hover {
     .form-browser{
         display:block;
         text-align:center;
+        width:100%;
     }
 
     .select-drop{
@@ -8422,7 +8425,11 @@ a.text-dark:focus, a.text-dark:hover {
         width:250px !important;
 
     }
+    .form-browser{
+        width:100%;
+    }
 }
+
 .select-drop{
     width:250px;
 
