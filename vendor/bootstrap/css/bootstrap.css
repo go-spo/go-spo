@@ -5449,7 +5449,6 @@ button.close {
 
 .carousel {
     position: relative;
-    margin-top:80px;
 }
 
 .carousel-inner {
@@ -5459,6 +5458,7 @@ button.close {
 }
 
 .carousel-item {
+    height: 100vh;
     position: relative;
     display: none;
     -ms-flex-align: center;
@@ -5727,7 +5727,7 @@ a.bg-light:focus, a.bg-light:hover {
 }
 
 .bg-dark {
-    background-color: white !important;
+    background-color: rgba(255, 255, 255,0.99) !important;
     box-shadow:3px 2px 20px black;
 }
 
@@ -8422,8 +8422,14 @@ a.text-dark:focus, a.text-dark:hover {
     }
 
     .select-drop{
-        width:350px !important;
+        width:340px !important;
 
+    }
+    .browser{
+        position:absolute;
+        top:40vh;
+        margin-left:10%;
+        margin-right:10%;
     }
 }
 
