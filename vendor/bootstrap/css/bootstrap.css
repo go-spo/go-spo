@@ -3669,7 +3669,7 @@ tbody.collapse.show {
   padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
   line-height: 1;
-  background: transparent;
+  background: tomato;
   border: 1px solid transparent;
   border-radius: 0.25rem;
 }
@@ -5448,6 +5448,7 @@ button.close {
 
 .carousel {
   position: relative;
+  margin-top:80px;
 }
 
 .carousel-inner {
@@ -5636,7 +5637,7 @@ button.close {
   z-index: 10;
   padding-top: 20px;
   padding-bottom: 20px;
-  color: #fff;
+  color: #302D2A;
   text-align: center;
 }
 
@@ -5721,7 +5722,8 @@ a.bg-light:focus, a.bg-light:hover {
 }
 
 .bg-dark {
-  background-color: #343a40 !important;
+  background-color: white !important;
+  box-shadow:3px 2px 20px black;
 }
 
 a.bg-dark:focus, a.bg-dark:hover {
@@ -8372,3 +8374,10 @@ a.text-dark:focus, a.text-dark:hover {
   visibility: hidden !important;
 }
 /*# sourceMappingURL=bootstrap.css.map */
+
+/*========================= css ============================================*/
+
+.footer{
+    background-color:#302D2A;
+    padding:10px 0px 10px 0px;
+}
