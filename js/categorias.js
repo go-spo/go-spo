@@ -3,7 +3,7 @@ $(document).ready(function () {
         url: 'php/categorias.php',
         dataType: 'json',
         success: function (miCategorias) {
-            console.log("hola");
+           
             console.log(miCategorias[1]);
             //  <option value="0">Deportes</option>
             
