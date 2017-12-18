@@ -327,7 +327,7 @@ textarea {
 }
 
 button,
-inpu    t {
+input {
     overflow: visible;
 }
 
@@ -640,8 +640,6 @@ pre code {
     margin-left: auto;
 }
 
-/*
-
 @media (min-width: 576px) {
     .container {
         max-width: 540px;
@@ -665,7 +663,7 @@ pre code {
         max-width: 1140px;
     }
 }
-*/
+
 .container-fluid {
     width: 100%;
     padding-right: 15px;
@@ -3603,8 +3601,7 @@ tbody.collapse.show {
     align-items: center;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 15px 10px 0px 15px;
-    margin-top:-20px;
+    padding: 0.5rem 1rem;
 }
 
 .navbar > .container,
@@ -3666,14 +3663,13 @@ tbody.collapse.show {
     flex-grow: 1;
     -ms-flex-align: center;
     align-items: center;
-    text-align: center;
 }
 
 .navbar-toggler {
     padding: 0.25rem 0.75rem;
     font-size: 1.25rem;
     line-height: 1;
-    background: tomato;
+    background: transparent;
     border: 1px solid transparent;
     border-radius: 0.25rem;
 }
@@ -4003,11 +3999,11 @@ tbody.collapse.show {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: tomato;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
-    color: #0069D9;
+    color: rgba(255, 255, 255, 0.75);
 }
 
 .navbar-dark .navbar-nav .nav-link.disabled {
@@ -4018,7 +4014,7 @@ tbody.collapse.show {
 .navbar-dark .navbar-nav .active > .nav-link,
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .nav-link.active {
-    color: #0069D9;
+    color: #fff;
 }
 
 .navbar-dark .navbar-toggler {
@@ -5461,7 +5457,6 @@ button.close {
 }
 
 .carousel-item {
-    height: 100vh;
     position: relative;
     display: none;
     -ms-flex-align: center;
@@ -5564,15 +5559,11 @@ button.close {
     right: 0;
 }
 
-.carousel-control-prev:hover, .carousel-control-next:hover {
-    background-color:rgba(0, 0, 0,0.2);
-}
-
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     display: inline-block;
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     background: transparent no-repeat center center;
     background-size: 100% 100%;
 }
@@ -5645,7 +5636,7 @@ button.close {
     z-index: 10;
     padding-top: 20px;
     padding-bottom: 20px;
-    color: #302D2A;
+    color: #fff;
     text-align: center;
 }
 
@@ -5730,8 +5721,7 @@ a.bg-light:focus, a.bg-light:hover {
 }
 
 .bg-dark {
-    background-color: rgba(255, 255, 255,0.99) !important;
-    box-shadow:3px 2px 20px black;
+    background-color: #343a40 !important;
 }
 
 a.bg-dark:focus, a.bg-dark:hover {
@@ -8382,116 +8372,3 @@ a.text-dark:focus, a.text-dark:hover {
     visibility: hidden !important;
 }
 /*# sourceMappingURL=bootstrap.css.map */
-
-/*========================= css ============================================*/
-
-.footer{
-    background-color:#302D2A;
-    padding:10px 0px 10px 0px;
-}
-
-
-.form-browser{
-    display:flex;
-    flex-flow:row wrap;
-    background-color:#302D2A;
-    border-radius:4px;
-    padding:20px 10px 8px 10px;
-    width:700px;
-    margin: 0 auto;
-}
-
-.form-group{
-    justify-content: flex-start;
-    padding:10px;
-}
-
-.form-group-btn{
-    margin-left: auto;
-    margin-top:10px;
-    margin-bottom:10px;
-    margin-right:20px;
-}
-
-.form-group, .form-group-btn{
-    align-items: center;
-}
-
-
-@media  (max-width: 766px) {
-    .form-browser{
-        display:block;
-        text-align:center;
-        width:100%;
-    }
-
-    .select-drop{
-        width:350px !important;
-
-    }
-
-    .browser{
-        position:absolute;
-        width:90%;
-        top:30vh;
-    }
-
-    .main-container{
-        width: 100%;
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
-    }
-
-    .py-5 {
-        padding-top: 0px !important;
-        padding-bottom: 0px !important;
-    }
-}
-
-@media  (max-width: 451px) {
-
-    .select-drop{
-        width:250px !important;
-
-    }
-    .form-browser{
-        width:100%;
-    }
-
-}
-
-.select-drop{
-    width:250px;
-    padding:8px 0px 10px 8px;
-    border-radius:3px;
-}
-
-.btn-browser{
-    width:100px;
-}
-
-.nav-login{
-    background-color:tomato;
-    border: 1px solid tomato;
-    padding:3px 3px 3px 3px;
-    color:white !important;
-    margin-top:4px;
-    margin-left:4px;
-}
-
-.carousel-caption>h3{
-    font-size: 3rem;
-}
-
-.carousel-caption>p{
-    font-size: 1.5rem;
-}
-
-.carousel-caption{
-    background-color:rgba(255,255,255,0.8);
-    border-radius:4px;
-    padding:2px;
-}
-
