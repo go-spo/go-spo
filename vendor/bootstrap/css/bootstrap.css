@@ -3603,7 +3603,8 @@ tbody.collapse.show {
     align-items: center;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 0.5rem 1rem;
+    padding: 15px 10px 0px 15px;
+    margin-top:-20px;
 }
 
 .navbar > .container,

@@ -12,7 +12,7 @@ if ($conection) {
         array_push($misDeportes, $row);
     }
     $queryCiudades = $conection->query("SELECT DISTINCT provincia FROM centros ORDER BY provincia ASC");
-    while ($fila =$queryCiudades->fetch_array(MYSQLI_ASSOC)) {
+    while ($fila = $queryCiudades->fetch_array(MYSQLI_ASSOC)) {
         array_push($misCiudades, $fila);
     }
 

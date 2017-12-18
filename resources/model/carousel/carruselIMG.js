@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $.ajax({
-        url: 'php/carruselIMG.php',
+        url: 'resources/model/carousel/carruselIMG.php',
         dataType: 'json',
         success: function (imagenes) {
 
@@ -19,10 +19,6 @@ $(document).ready(function () {
                 i++;
             });
         }
-
-
-
-
     });
 });
 

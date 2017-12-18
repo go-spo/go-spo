@@ -6,7 +6,7 @@ $(document).ready(function () {
         cat = $(this).val();
         if (cat != 0) {
             $.ajax({
-                url: 'php/selects.php',
+                url: 'resources/model/browser/selects.php',
                 dataType: 'json',
                 data: "value=" + cat,
                 success: function (ciudades) {
@@ -19,7 +19,7 @@ $(document).ready(function () {
             );
         } else {
             $.ajax({
-                url: 'php/categorias.php',
+                url: 'resources/model/categories/categorias.php',
                 dataType: 'json',
                 data: "value=" + cat,
                 success: function (ciudades) {
