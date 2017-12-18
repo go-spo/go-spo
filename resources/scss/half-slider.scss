@@ -1,5 +1,9 @@
 @import "_variables.scss";
 
+/*============******** VARIABLES ******** ========================*/
+$phone-media-max-size:451px;
+$phablet-media-max-size:766px;
+
 /*============================= CAROUSEL =========================*/
 .carousel-item {
     min-height: 100vh;
@@ -16,17 +20,34 @@
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    width: 25px !important;
-    height: 25px !important;
+    width: 25px;
+    height: 25px;
 }
 
 .carousel-caption {
-    color: #302D2A !important;
+    color: #302D2A;
+    margin-bottom:30vh;
+}
+
+/*-------------- CAROUSEL DESCRIPTION -----------*/
+
+.carousel-caption>h3{
+    font-size: 3rem;
+}
+
+.carousel-caption>p{
+    font-size: 1.5rem;
+}
+
+.carousel-caption{
+    background-color:rgba(255,255,255,0.8);
+    border-radius:4px;
+    padding:2px;
 }
 
 /*=============== NAVBAR (header, menu encogido) ======================*/
 .navbar {
-    padding: 15px 10px 0px 15px !important;
+    padding: 15px 10px 0px 15px;
     margin-top:-20px;
 }
 .navbar-collapse {
@@ -39,27 +60,37 @@
 }
 
 .navbar-toggler {
-    background: $navbar-toggle-bg-color !important;
+    background: $navbar-toggle-bg-color;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: tomato !important;
+    color: tomato;
 }
 
 .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
-    color: #0069D9 !important;
+    color: #0069D9;
 }
 
 .navbar-dark .navbar-nav .show > .nav-link,
 .navbar-dark .navbar-nav .active > .nav-link,
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .nav-link.active {
-    color: #0069D9 !important;
+    color: #0069D9;
+}
+
+/*--------------- LOGIN --------------*/
+.nav-login{
+    background-color:tomato;
+    border: 1px solid tomato;
+    padding:3px 3px 3px 3px;
+    color:white !important;
+    margin-top:4px;
+    margin-left:4px;
 }
 
 /*========================== MAIN HEADER =============================*/
 .bg-main-header-custom {
-    background-color: rgba(255, 255, 255,0.99) !important;
+    background-color: rgba(255, 255, 255,0.99);
     box-shadow:3px 2px 20px black;
 }
 
@@ -96,4 +127,57 @@
 
 .form-group, .form-group-btn{
     align-items: center;
+}
+
+.select-drop{
+    width:250px;
+    padding:8px 0px 10px 8px;
+    border-radius:3px;
+}
+
+.btn-browser{
+    width:100px;
+}
+
+@media  (max-width: $phablet-media-max-size) {
+    .form-browser{
+        display:block;
+        text-align:center;
+        width:100%;
+    }
+    .select-drop{
+        width:350px;
+
+    }
+
+    .browser{
+        position:absolute;
+        width:90%;
+        top:30vh;
+    }
+
+    .main-container{
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    /*ELIMINA EL ESPACION ENTRE EL SECTION Y EL FOOTER*/
+    .py-5 {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+}
+
+@media  (max-width: $phablet-media-max-size) {
+
+    .select-drop{
+        width:250px !important;
+
+    }
+    .form-browser{
+        width:100%;
+    }
+
 }
