@@ -1,9 +1,5 @@
 @import "_variables.scss";
 
-/*============******** VARIABLES ******** ========================*/
-$phone-media-max-size:451px;
-$phablet-media-max-size:766px;
-
 /*============================= CAROUSEL =========================*/
 .carousel-item {
     min-height: 100vh;
@@ -90,7 +86,7 @@ $phablet-media-max-size:766px;
 
 /*========================== MAIN HEADER =============================*/
 .bg-main-header-custom {
-    background-color: rgba(255, 255, 255,0.99);
+    background-color: $main-header-bg-color;
     box-shadow:3px 2px 20px black;
 }
 
@@ -147,7 +143,6 @@ $phablet-media-max-size:766px;
     }
     .select-drop{
         width:350px;
-
     }
 
     .browser{
@@ -165,13 +160,13 @@ $phablet-media-max-size:766px;
     }
     /*ELIMINA EL ESPACION ENTRE EL SECTION Y EL FOOTER*/
     .py-5 {
-        padding-top: 0px;
-        padding-bottom: 0px;
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
     }
 }
 
-@media  (max-width: $phablet-media-max-size) {
-
+@media  (max-width: $phone-media-max-size) {
+    
     .select-drop{
         width:250px !important;
 
