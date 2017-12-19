@@ -1,8 +1,5 @@
 <?php
-
-$bd = "gosport";
-$conection = new mysqli("localhost", "root", "root", $bd);
-mysqli_set_charset($conection, "utf8");
+include '../DBA/DBA.php';
 
 if ($conection) {
    if(isset($_GET["value"])){

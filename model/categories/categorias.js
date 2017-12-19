@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $.ajax({
-        url: 'resources/model/categories/categorias.php',
+        url: 'model/categories/categorias.php',
         dataType: 'json',
         success: function (miCategorias) {
             

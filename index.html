@@ -14,7 +14,7 @@
         <!-- Bootstrap core CSS -->
         <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
         <!-- Custom styles for this template -->
-        <link href="resources/css/half-slider.css" rel="stylesheet" type="text/css"/> 
+        <link href="styles/css/half-slider.css" rel="stylesheet" type="text/css"/> 
     </head>
     <body>
         <!-- Bootstrap core JavaScript -->
@@ -57,9 +57,7 @@
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                 </ol>
-                <div class="carousel-inner" role="listbox">
-
-                </div>
+                <div class="carousel-inner" role="listbox"></div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
@@ -90,18 +88,11 @@
                                 </select>
                             </div>
                         </div>
-                        <!--
-                        <div class="form-group">
+                        <div class="form-group form-data-picker">
                             <div class="searchDataList">
-                                <select name="guiest_id4" id="guiest_id4" class="select-drop">
-                                    <option value="0">All Conditions</option>
-                                    <option value="1">All Conditions 1</option>
-                                    <option value="2">All Conditions 2</option>
-                                    <option value="3">All Conditions 3</option>            
-                                </select>
+                                <input type="date" name="day">
                             </div>
                         </div>
-                        -->
                         <div class="form-group-btn">
                             <button type="submit" class="btn btn-primary btn-browser">Search <i class="fa fa-search" aria-hidden="true"></i></button>
                         </div>
@@ -118,9 +109,9 @@
             <!-- /.container -->
         </footer>
 
-        <script src="resources/model/categories/categorias.js" type="text/javascript"></script>
-        <script src="resources/model/browser/selects.js" type="text/javascript"></script>
-        <script src="resources/model/carousel/carruselIMG.js" type="text/javascript"></script>
+        <script src="model/categories/categorias.js" type="text/javascript"></script>
+        <script src="model/browser/selects.js" type="text/javascript"></script>
+        <script src="model/carousel/carruselIMG.js" type="text/javascript"></script>
     </body>
 
 </html>

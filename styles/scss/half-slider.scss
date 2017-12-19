@@ -99,19 +99,24 @@
 
 /*============================ BROWSER ================================*/
 
+
 .form-browser{
     display:flex;
     flex-flow:row wrap;
     background-color:#302D2A;
     border-radius:4px;
     padding:20px 10px 8px 10px;
-    width:700px;
+    width:900px;
     margin: 0 auto;
 }
 
 .form-group{
     justify-content: flex-start;
     padding:10px;
+}
+
+.form-data-picker{
+    margin-left: auto;
 }
 
 .form-group-btn{
@@ -147,7 +152,7 @@
 
     .browser{
         position:absolute;
-        width:90%;
+        width:80%;
         top:30vh;
     }
 
