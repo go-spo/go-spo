@@ -22,17 +22,17 @@
 
 .carousel-caption {
     color: #302D2A;
-    margin-bottom:30vh;
+    margin-bottom:10vh;
 }
 
 /*-------------- CAROUSEL DESCRIPTION -----------*/
 
 .carousel-caption>h3{
-    font-size: 3rem;
+    font-size: 3.5vw;
 }
 
 .carousel-caption>p{
-    font-size: 1.5rem;
+    font-size: 1.5vw;
 }
 
 .carousel-caption{
@@ -99,28 +99,28 @@
 
 /*============================ BROWSER ================================*/
 
+.browser{
+    position:absolute;
+    width:100%;
+    top:30vh;
+}
 
 .form-browser{
     display:flex;
     flex-flow:row wrap;
     background-color:#302D2A;
-    border-radius:4px;
+    border-radius:60px;
     padding:20px 10px 8px 10px;
-    width:900px;
-    margin: 0 auto;
+    margin-left:10%;
+    margin-right:10%;
 }
 
 .form-group{
-    justify-content: flex-start;
+    justify-content: center;
     padding:10px;
 }
 
-.form-data-picker{
-    margin-left: auto;
-}
-
 .form-group-btn{
-    margin-left: auto;
     margin-top:10px;
     margin-bottom:10px;
     margin-right:20px;
@@ -131,7 +131,10 @@
 }
 
 .select-drop{
-    width:250px;
+    width:100%;
+}
+
+.select-drop,.date-picker{
     padding:8px 0px 10px 8px;
     border-radius:3px;
 }
@@ -139,6 +142,34 @@
 .btn-browser{
     width:100px;
 }
+
+.py-5 {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+/*------------------ Date picker ---------------*/
+/*Esta clase llamadas compartidas fuera de este trozo*/
+.date-picker{
+    width:40%;
+    cursor: pointer;
+}
+
+.date-picker-container{
+    position: relative;
+}
+
+.date-picker-container>svg{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    color:$date-picker-icon-color;
+}
+
+#from,#to{
+    padding-left:30px;
+}
+
 
 @media  (max-width: $phablet-media-max-size) {
     .form-browser{
@@ -164,20 +195,26 @@
         margin-left: auto;
     }
     /*ELIMINA EL ESPACION ENTRE EL SECTION Y EL FOOTER*/
+    /*
     .py-5 {
         padding-top: 0px !important;
         padding-bottom: 0px !important;
     }
+    */
 }
 
 @media  (max-width: $phone-media-max-size) {
-    
+
     .select-drop{
         width:250px !important;
 
     }
     .form-browser{
         width:100%;
+    }
+
+    #from,#to{
+        font-size: 12px;
     }
 
 }
