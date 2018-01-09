@@ -89,7 +89,7 @@
   display: flex;
   flex-flow: row wrap;
   background-color: #302D2A;
-  border-radius: 60px;
+  border-radius: 8px;
   padding: 20px 10px 8px 10px;
   margin-left: 10%;
   margin-right: 10%; }
