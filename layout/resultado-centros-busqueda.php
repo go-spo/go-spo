@@ -77,6 +77,7 @@ $_SESSION["ciudad"] = $_POST["ciudades-browser"];
             </div>
 
             <div class="sidebar left_inner">
+                <!-- El div de arria existe exclusivamente para el posicionamiento del risizer-->
                 <div class="container-sidebar">
                     <div class="main-img_sidebar">
 
@@ -95,13 +96,12 @@ $_SESSION["ciudad"] = $_POST["ciudades-browser"];
                     </div>
                 </div>
             </div>
-            <div class="map-container right_inner">
+            <div class="map-container">
                 <div id="map"></div>
             </div>
         </div>
         <script>
                     $('.left_inner').resizable();
-                    $('.right__inner').resizable();
         </script>
     </body>
 </html>

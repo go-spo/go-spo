@@ -4,6 +4,9 @@
   background-color: grey;
   height: 90vh; }
 
+.sidebar {
+  height: 88vh; }
+
 /* ======================== MAIN GRID ===============================*/
 .container-grid {
   margin: 0px;
@@ -20,11 +23,18 @@
   grid-area: main; }
 
 .sidebar {
-  grid-area: sidebar; }
+  grid-area: sidebar;
+  min-width: 25vw;
+  max-width: 75vw; }
 
 @media (max-width: 1000px) {
   .container-grid {
-    grid-template-areas: "header header" "main main" "sidebar sidebar"; } }
+    grid-template-areas: "header header" "main main" "sidebar sidebar"; }
+  .sidebar {
+    width: 100% !important;
+    max-width: 100%; }
+  .container-sidebar {
+    overflow: visible !important; } }
 
 /* ======================= SIDEBAR GRID =============================*/
 .container-sidebar {
@@ -32,7 +42,6 @@
   padding: 0px;
   display: grid;
   overflow: auto;
-  overflow-x: hidden;
   grid-template-columns: 100%;
   grid-template-rows: 40vh 50vh;
   grid-template-areas: "header header" "main main"; }
@@ -43,7 +52,8 @@
 
 .content_sidebar {
   grid-area: main;
-  background-color: darkseagreen; }
+  background-color: darkseagreen;
+  height: max-content; }
 
 /* ================== SCROLLBAR ========================= */
 @media (min-width: 1000px) {
@@ -59,6 +69,5 @@
   ::-webkit-scrollbar-thumb:hover {
     background-color: #999; } }
 
-.left_inner {
-  max-height: 100%;
-  text-align: center; }
+.ui-resizable-handle {
+  background-image: none; }

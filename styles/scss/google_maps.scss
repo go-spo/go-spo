@@ -5,8 +5,8 @@
     height:90vh;
 }
 
-#sidePane{
-
+.sidebar{
+    height: 88vh;
 }
 
 /* ======================== MAIN GRID ===============================*/
@@ -20,7 +20,7 @@
     grid-template-areas:
         "header header"
         "sidebar main";
- 
+
 }
 
 .header{
@@ -31,6 +31,8 @@
 }
 .sidebar{
     grid-area: sidebar;
+    min-width: 25vw;
+    max-width: 75vw;
 }
 
 @media  (max-width: 1000px) {
@@ -40,6 +42,15 @@
             "main main"
             "sidebar sidebar";
 
+    }
+    .sidebar{
+        width: 100% !important;
+        max-width: 100%;
+        
+    }
+    
+    .container-sidebar{
+        overflow: visible !important;
     }
 }
 
@@ -51,7 +62,6 @@
     padding: 0px;
     display:grid;
     overflow:auto;
-    overflow-x: hidden;
     grid-template-columns: 100%;
     grid-template-rows: 40vh 50vh;
     grid-template-areas:
@@ -66,6 +76,7 @@
 .content_sidebar{
     grid-area: main;
     background-color: darkseagreen;
+    height: max-content;
 }
 
 /* ================== SCROLLBAR ========================= */
@@ -90,9 +101,7 @@
         background-color: #999;  
     }
 }
-
-
-.left_inner {
-    max-height: 100%;
-    text-align: center;
+.ui-resizable-handle {
+    background-image:none;
 }
+
