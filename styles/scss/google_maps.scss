@@ -9,6 +9,10 @@
     height: 88vh;
 }
 
+.header{
+    width: 90%;
+}
+
 /* ======================== MAIN GRID ===============================*/
 
 .container-grid{
@@ -25,12 +29,15 @@
 
 .header{
     grid-area: header;
+    
+
 }
 .map-container{
     grid-area: main;
 }
 .sidebar{
     grid-area: sidebar;
+    width: 30vw;
     min-width: 25vw;
     max-width: 75vw;
 }
@@ -46,12 +53,16 @@
     .sidebar{
         width: 100% !important;
         max-width: 100%;
-        
+
     }
-    
+
     .container-sidebar{
         overflow: visible !important;
     }
+
+    .map-container{
+        margin-top:10px;
+    }   
 }
 
 
@@ -62,7 +73,7 @@
     padding: 0px;
     display:grid;
     overflow:auto;
-    grid-template-columns: 100%;
+    grid-template-columns: 50% 50%;
     grid-template-rows: 40vh 50vh;
     grid-template-areas:
         "header header"
@@ -71,12 +82,22 @@
 
 .main-img_sidebar{
     grid-area: header;
-    background-color: tomato;
+    text-align: center;
 }
+
+.main-img_sidebar>img{
+    width:100%;
+    max-height: 100%;
+    max-width: 30vw;
+    background-size: auto;
+}
+
 .content_sidebar{
     grid-area: main;
-    background-color: darkseagreen;
     height: max-content;
+    text-align: justify;
+    padding: 10px;
+    
 }
 
 /* ================== SCROLLBAR ========================= */
