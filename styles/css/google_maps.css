@@ -14,7 +14,7 @@
   display: grid;
   grid-template-columns: 32% 68%;
   grid-template-rows: 9vh 91vh;
-  grid-template-areas: "header header" "sidebar main"; }
+  grid-template-areas: "header header" "sidebar main"; }
 
 .container-sidebar {
   margin: 0px;
@@ -23,7 +23,7 @@
   overflow: auto;
   grid-template-columns: 100%;
   grid-template-rows: 39vh 50vh;
-  grid-template-areas: "header header" "main main"; }
+  grid-template-areas: "header header" "main main"; }
 
 .main-img_sidebar {
   grid-area: header;
@@ -45,4 +45,4 @@
 
 @media (max-width: 1200px) {
   .container-grid {
-    grid-template-areas: "header header" "main main" "sidebar sidebar"; } }
+    grid-template-areas: "header header" "main main" "sidebar sidebar"; } }
