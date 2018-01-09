@@ -20,8 +20,9 @@
   margin: 0px;
   padding: 0px;
   display: grid;
+  overflow: auto;
   grid-template-columns: 100%;
-  grid-template-rows: 39vh 61vh;
+  grid-template-rows: 39vh 50vh;
   grid-template-areas: "header header" "main main"; }
 
 .main-img_sidebar {
