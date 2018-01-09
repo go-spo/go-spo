@@ -15,10 +15,17 @@ $(document).ready(function () {
             console.log("hola");
             markers.forEach(n => {
                 var posicion = new google.maps.LatLng(n.coordenada_x, n.coordenada_y);
+                var infowindow = new google.maps.InfoWindow({
+                    content: n.nombre
+                });
                 var marker = new google.maps.Marker({
                     position: posicion,
                     map: map
                 });
+                marker.addListener('click', function () {
+                    infowindow.open(map, marker);
+                });
+
             });
         }
     });
