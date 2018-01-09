@@ -22,6 +22,26 @@
         "sidebar main";
 }
 
+.container-sidebar{
+    margin:0px;
+    padding: 0px;
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 39vh 61vh;
+    grid-template-areas:
+        "header header"
+        "main main";
+}
+
+.main-img_sidebar{
+    grid-area: header;
+    background-color: red;
+}
+.content_sidebar{
+    grid-area: main;
+    background-color: green;
+}
+
 .header{
     grid-area: header;
 }

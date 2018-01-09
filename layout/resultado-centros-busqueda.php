@@ -76,7 +76,13 @@ $_SESSION["ciudad"] = $_POST["ciudades-browser"];
             </div>
 
             <div class="sidebar">
-                <div id="sidePane"></div>
+                <div class="container-sidebar">
+                    <div class="main-img_sidebar">
+
+                    </div>
+                    <div class="content_sidebar">
+                    </div>
+                </div>
             </div>
             <div class="main">
                 <div id="map"></div>
