@@ -42,6 +42,7 @@ $_SESSION["ciudad"] = $_POST["ciudades-browser"];
                 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiTt0JoSwwww7v-t8xbt_40Ph6MvxeTMY&callback=initMap">
         </script>
         <script src="../model/Maps/initMap.js" type="text/javascript"></script>
+        <script src="../model/Maps/sideMaps/sideMaps.js" type="text/javascript"></script>
 
         <div class="container-grid">
             <div class="header">

@@ -2,31 +2,55 @@
 
 #map {
     background-color: grey;
-    height:91vh;
-    width:100%;
+    height:90vh;
 }
 
 #sidePane{
-    width: 30px;
 
 }
+
+/* ======================== MAIN GRID ===============================*/
 
 .container-grid{
     margin:0px;
     padding: 0px;
     display:grid;
-    grid-template-columns: 32% 68%;
-    grid-template-rows: 9vh 91vh;
+    grid-template-columns: 500px auto;
+    grid-template-rows: 10vh 90vh;
     grid-template-areas:
         "header header"
         "sidebar main";
 }
+
+.header{
+    grid-area: header;
+}
+.main{
+    grid-area: main;
+}
+.sidebar{
+    grid-area: sidebar;
+}
+
+@media  (max-width: 1000px) {
+    .container-grid{
+        grid-template-areas:
+            "header header"
+            "main main"
+            "sidebar sidebar";
+
+    }
+}
+
+
+/* ======================= SIDEBAR GRID =============================*/
 
 .container-sidebar{
     margin:0px;
     padding: 0px;
     display:grid;
     overflow:auto;
+    overflow-x: hidden;
     grid-template-columns: 100%;
     grid-template-rows: 39vh 50vh;
     grid-template-areas:
@@ -43,23 +67,3 @@
     background-color: green;
 }
 
-.header{
-    grid-area: header;
-}
-.main{
-    grid-area: main;
-}
-.sidebar{
-    grid-area: sidebar;
-    height: 91vh;
-}
-
-@media  (max-width: 1200px) {
-    .container-grid{
-        grid-template-areas:
-            "header header"
-            "main main"
-            "sidebar sidebar";
-
-    }
-}
