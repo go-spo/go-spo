@@ -2,11 +2,11 @@ $(document).ready(function () {
 
     $("#deportes-browser").on("change", function () {
         $("#ciudades-browser").empty();
-        cat = 0;
+        var cat = 0;
         cat = $(this).val();
         if (cat != 0) {
             $.ajax({
-                url: 'resources/model/browser/selects.php',
+                url: 'model/browser/selects.php',
                 dataType: 'json',
                 data: "value=" + cat,
                 success: function (ciudades) {
@@ -19,7 +19,7 @@ $(document).ready(function () {
             );
         } else {
             $.ajax({
-                url: 'resources/model/categories/categorias.php',
+                url: 'model/categories/categorias.php',
                 dataType: 'json',
                 data: "value=" + cat,
                 success: function (ciudades) {
