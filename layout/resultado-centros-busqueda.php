@@ -42,79 +42,57 @@ $_SESSION["ciudad"] = $_POST["ciudades-browser"];
                 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiTt0JoSwwww7v-t8xbt_40Ph6MvxeTMY&callback=initMap">
         </script>
         <script src="../model/Maps/initMap.js" type="text/javascript"></script>
+        <script src="../model/Maps/sideMaps/datosCentros.js" type="text/javascript"></script>
+        <!-- Effects-->
+        <script src="../vendor/jquery/effects/slider.js" type="text/javascript"></script>
 
-        <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-main-header-custom fixed-top">
-            <div class="container">
-                <a class="navbar-brand" href="../index.html"><img src="../resources/img/logo-3.PNG" alt=""/></a>
+        <div class="container-grid">
+            <div class="header">
+                <!-- Navigation -->
+                <nav class="navbar navbar-expand-lg navbar-dark bg-main-header-custom fixed-top">
+                    <div class="container">
+                        <div class="navbar-brand">
+                            <a href="../index.html"><img src="../resources/img/logo-3.PNG" alt=""/></a>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarResponsive">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="../index.html">Home
+                                        <span class="sr-only">(current)</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://danialba96.wixsite.com/gospo">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link btn btn-primary nav-login" href="#">Log In</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home
-                                <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://danialba96.wixsite.com/gospo">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link btn btn-primary nav-login" href="#">Log In</a>
-                        </li>
-                    </ul>
+            <div class="sidebar left_inner">
+                <!-- El div de arria existe exclusivamente para el posicionamiento del risizer-->
+                <div class="container-sidebar">
+                    <div class="content_sidebar">
+                        <!-- codigo de todos los deportivos -->
+                    </div>
                 </div>
             </div>
-        </nav>
-
-        <div id="map"></div>
-
-        <div class="nav-side-menu">
-            <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
-
-            <div class="menu-list">
-
-                <ul id="menu-content" class="menu-content collapse out">
-                    <li>
-                        <a href="#"><i class="far fa-calendar-alt"></i></a>
-                    </li>
-
-                    <li  data-toggle="collapse" data-target="#products" class="collapsed active">
-                        <a href="#"><i class="fa fa-dashboard fa-lg"></i></a>
-                    </li>
-
-                    <li data-toggle="collapse" data-target="#service" class="collapsed">
-                        <a href="#"><i class="fas fa-camera-retro"></i></a>
-                    </li>  
-
-                    <li data-toggle="collapse" data-target="#new" class="collapsed">
-                        <a href="#"><i class="fas fa-envelope"></i></a>
-                    </li>
-                    <li>
-                        <a href="#">
-                           <i class="far fa-star"></i>
-                        </a>
-                    </li>
-                </ul>
+            <div class="map-container">
+                <div id="map"></div>
             </div>
         </div>
-
-        <!-- Page Content -->
-        <section class="py-5">
-
-        </section>
-
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="container">
-                <p class="m-0 text-center text-white">&copy; Gospo 2017</p>
-            </div>
-            <!-- /.container -->
-        </footer>
+        <script>
+                    $('.left_inner').resizable();
+        </script>
     </body>
 </html>
