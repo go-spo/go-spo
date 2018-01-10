@@ -17,7 +17,7 @@
   display: grid;
   grid-template-columns: 0.2fr 1fr;
   grid-template-rows: 9vh;
-  grid-template-areas: "header header" "sidebar main"; }
+  grid-template-areas: "header header" "sidebar main"; }
 
 .header {
   grid-area: header; }
@@ -33,7 +33,7 @@
 
 @media (max-width: 1000px) {
   .container-grid {
-    grid-template-areas: "header header" "main main" "sidebar sidebar"; }
+    grid-template-areas: "header header" "main main" "sidebar sidebar"; }
   .sidebar {
     width: 100% !important;
     max-width: 100%; }
@@ -50,7 +50,7 @@
   overflow: auto;
   grid-template-columns: 50% 50%;
   grid-template-rows: 40vh 50vh;
-  grid-template-areas: "header header" "main main"; }
+  grid-template-areas: "header header" "main main"; }
 
 .main-img_sidebar {
   grid-area: header;

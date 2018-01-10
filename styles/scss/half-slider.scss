@@ -93,10 +93,9 @@
 .bg-main-header-custom {
     background-color: $main-header-bg-color;
     box-shadow:3px 2px 20px black;
-    min-height: 12vh;
 }
 
-#effect{
+#main-header-effect{
     display: none;
 }
 
@@ -113,6 +112,10 @@
     position:absolute;
     width:100%;
     top:30vh;
+}
+
+#browser-effect{
+    display:none;
 }
 
 .form-browser{

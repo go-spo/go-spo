@@ -51,7 +51,7 @@ $_SESSION["ciudad"] = $_POST["ciudades-browser"];
                 <!-- Navigation -->
                 <nav class="navbar navbar-expand-lg navbar-dark bg-main-header-custom fixed-top">
                     <div class="container">
-                        <div id="effect" class="navbar-brand">
+                        <div class="navbar-brand">
                             <a href="../index.html"><img src="../resources/img/logo-3.PNG" alt=""/></a>
                         </div>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">

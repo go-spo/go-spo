@@ -72,10 +72,9 @@
 /*========================== MAIN HEADER =============================*/
 .bg-main-header-custom {
   background-color: rgba(255, 255, 255, 0.99);
-  box-shadow: 3px 2px 20px black;
-  min-height: 12vh; }
+  box-shadow: 3px 2px 20px black; }
 
-#effect {
+#main-header-effect {
   display: none; }
 
 /*============================ FOOTER ================================*/
@@ -88,6 +87,9 @@
   position: absolute;
   width: 100%;
   top: 30vh; }
+
+#browser-effect {
+  display: none; }
 
 .form-browser {
   display: flex;
