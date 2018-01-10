@@ -43,14 +43,16 @@ $_SESSION["ciudad"] = $_POST["ciudades-browser"];
         </script>
         <script src="../model/Maps/initMap.js" type="text/javascript"></script>
         <script src="../model/Maps/sideMaps/sideMaps.js" type="text/javascript"></script>
+        <script src="../vendor/jquery/effects/slider.js" type="text/javascript"></script>
 
         <div class="container-grid">
             <div class="header">
                 <!-- Navigation -->
                 <nav class="navbar navbar-expand-lg navbar-dark bg-main-header-custom fixed-top">
                     <div class="container">
-                        <a class="navbar-brand" href="../index.html"><img src="../resources/img/logo-3.PNG" alt=""/></a>
-
+                        <div id="effect" class="navbar-brand">
+                            <a href="../index.html"><img src="../resources/img/logo-3.PNG" alt=""/></a>
+                        </div>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>

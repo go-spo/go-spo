@@ -46,6 +46,11 @@
     padding: 15px 10px 0px 15px;
     margin-top:-20px;
 }
+
+.navbar-brand{
+    
+}
+
 .navbar-collapse {
     text-align: center;
     padding-bottom:10px;
@@ -88,6 +93,11 @@
 .bg-main-header-custom {
     background-color: $main-header-bg-color;
     box-shadow:3px 2px 20px black;
+    min-height: 12vh;
+}
+
+#effect{
+    display: none;
 }
 
 /*============================ FOOTER ================================*/
@@ -109,7 +119,7 @@
     display:flex;
     flex-flow:row wrap;
     background-color:#302D2A;
-    border-radius:8 px;
+    border-radius:8px;
     padding:20px 10px 8px 10px;
     margin-left:10%;
     margin-right:10%;
