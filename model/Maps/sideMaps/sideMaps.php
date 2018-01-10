@@ -8,19 +8,30 @@ if ($conection) {
     $centros = [];
 
     $queryCentros = $conection->query("select c.*, p.hora_apertura,p.hora_cierre
+<<<<<<< HEAD
         from centros c inner join pistas_deporte_centro p inner join deportes d
         on c.id_centro= p.id_centro and d.id_deporte = p.id_deporte
         where d.id_deporte = '$deporte'
         and p.id_centro in (select id_centro from centros where provincia='$ciudad');");
 
 
+=======
+         from centros c inner join pistas_deporte_centro p inner join deportes d
+         on c.id_centro= p.id_centro and d.id_deporte = p.id_deporte
+         where d.id_deporte = '$deporte'
+         and p.id_centro in (select id_centro from centros where provincia='$ciudad');");
+>>>>>>> daniel
 
     while ($fila = $queryCentros->fetch_array(MYSQLI_ASSOC)) {
         array_push($centros, $fila);
     }
 }
 echo json_encode($centros);
+<<<<<<< HEAD
 ?>
 }
 
 
+=======
+?>
+>>>>>>> daniel

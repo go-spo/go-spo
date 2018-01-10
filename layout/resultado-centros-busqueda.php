@@ -43,6 +43,10 @@ $_SESSION["ciudad"] = $_POST["ciudades-browser"];
         </script>
         <script src="../model/Maps/initMap.js" type="text/javascript"></script>
         <script src="../model/Maps/sideMaps/sideMaps.js" type="text/javascript"></script>
+<<<<<<< HEAD
+=======
+        <!-- Effects -->
+>>>>>>> daniel
         <script src="../vendor/jquery/effects/slider.js" type="text/javascript"></script>
 
         <div class="container-grid">
@@ -85,6 +89,7 @@ $_SESSION["ciudad"] = $_POST["ciudades-browser"];
                         <img src="http://www.palmadelrio.es/sites/default/files/tenis.1.jpg" alt=""/>
                     </div>
                     <div class="content_sidebar">
+<<<<<<< HEAD
                         <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
                         </p>
                         <p> ¿Por qué lo usamos?
@@ -97,6 +102,10 @@ $_SESSION["ciudad"] = $_POST["ciudades-browser"];
                         <p>
                             El trozo de texto estándar de Lorem Ipsum usado desde el año 1500 es reproducido debajo para aquellos interesados. Las secciones 1.10.32 y 1.10.33 de "de Finibus Bonorum et Malorum" por Cicero son también reproducidas en su forma original exacta, acompañadas por versiones en Inglés de la traducción realizada en 1914 por H. Rackham.
                         </p> </div>
+=======
+                       
+                    </div>
+>>>>>>> daniel
                 </div>
             </div>
             <div class="map-container">
