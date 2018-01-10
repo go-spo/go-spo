@@ -2,11 +2,11 @@
 
 #map {
     background-color: grey;
-    height:90vh;
+    height:91vh;
 }
 
 .sidebar{
-    height: 88vh;
+    height: 89vh;
 }
 
 .header{
@@ -20,7 +20,7 @@
     padding: 0px;
     display:grid;
     grid-template-columns: 0.2fr 1fr;
-    grid-template-rows: 10vh 90vh;
+    grid-template-rows: 9vh;
     grid-template-areas:
         "header header"
         "sidebar main";
@@ -104,7 +104,7 @@
 
 @media  (min-width: 1000px) {
     ::-webkit-scrollbar {
-        width: 12px;
+        width: 10px;
         height: 12px;
     }
 
