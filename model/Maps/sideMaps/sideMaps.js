@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-$(document).ready(function () {
-
-
-});
-
-
-=======
 $(document).ready(function () {
 
     $.ajax({
@@ -39,4 +31,4 @@ $(document).ready(function () {
 
     });
 });
->>>>>>> daniel
+
