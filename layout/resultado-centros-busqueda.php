@@ -42,79 +42,69 @@ $_SESSION["ciudad"] = $_POST["ciudades-browser"];
                 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiTt0JoSwwww7v-t8xbt_40Ph6MvxeTMY&callback=initMap">
         </script>
         <script src="../model/Maps/initMap.js" type="text/javascript"></script>
+        <script src="../model/Maps/sideMaps/sideMaps.js" type="text/javascript"></script>
+        <script src="../vendor/jquery/effects/slider.js" type="text/javascript"></script>
 
-        <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-main-header-custom fixed-top">
-            <div class="container">
-                <a class="navbar-brand" href="../index.html"><img src="../resources/img/logo-3.PNG" alt=""/></a>
+        <div class="container-grid">
+            <div class="header">
+                <!-- Navigation -->
+                <nav class="navbar navbar-expand-lg navbar-dark bg-main-header-custom fixed-top">
+                    <div class="container">
+                        <div id="effect" class="navbar-brand">
+                            <a href="../index.html"><img src="../resources/img/logo-3.PNG" alt=""/></a>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarResponsive">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="../index.html">Home
+                                        <span class="sr-only">(current)</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://danialba96.wixsite.com/gospo">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link btn btn-primary nav-login" href="#">Log In</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home
-                                <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://danialba96.wixsite.com/gospo">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link btn btn-primary nav-login" href="#">Log In</a>
-                        </li>
-                    </ul>
+            <div class="sidebar left_inner">
+                <!-- El div de arria existe exclusivamente para el posicionamiento del risizer-->
+                <div class="container-sidebar">
+                    <div class="main-img_sidebar">
+                        <img src="http://www.palmadelrio.es/sites/default/files/tenis.1.jpg" alt=""/>
+                    </div>
+                    <div class="content_sidebar">
+                        <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+                        </p>
+                        <p> ¿Por qué lo usamos?
+                            Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de "Lorem Ipsum" va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo).
+                        </p>
+                        <p>
+                            ¿De dónde viene?
+                            Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de Cristo, haciendo que este adquiera mas de 2000 años de antiguedad. Richard McClintock, un profesor de Latin de la Universidad de Hampden-Sydney en Virginia, encontró una de las palabras más oscuras de la lengua del latín, "consecteur", en un pasaje de Lorem Ipsum, y al seguir leyendo distintos textos del latín, descubrió la fuente indudable. Lorem Ipsum viene de las secciones 1.10.32 y 1.10.33 de "de Finnibus Bonorum et Malorum" (Los Extremos del Bien y El Mal) por Cicero, escrito en el año 45 antes de Cristo. Este libro es un tratado de teoría de éticas, muy popular durante el Renacimiento. La primera linea del Lorem Ipsum, "Lorem ipsum dolor sit amet..", viene de una linea en la sección 1.10.32
+                        </p>
+                        <p>
+                            El trozo de texto estándar de Lorem Ipsum usado desde el año 1500 es reproducido debajo para aquellos interesados. Las secciones 1.10.32 y 1.10.33 de "de Finibus Bonorum et Malorum" por Cicero son también reproducidas en su forma original exacta, acompañadas por versiones en Inglés de la traducción realizada en 1914 por H. Rackham.
+                        </p> </div>
                 </div>
             </div>
-        </nav>
-
-        <div id="map"></div>
-
-        <div class="nav-side-menu">
-            <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
-
-            <div class="menu-list">
-
-                <ul id="menu-content" class="menu-content collapse out">
-                    <li>
-                        <a href="#"><i class="far fa-calendar-alt"></i></a>
-                    </li>
-
-                    <li  data-toggle="collapse" data-target="#products" class="collapsed active">
-                        <a href="#"><i class="fa fa-dashboard fa-lg"></i></a>
-                    </li>
-
-                    <li data-toggle="collapse" data-target="#service" class="collapsed">
-                        <a href="#"><i class="fas fa-camera-retro"></i></a>
-                    </li>  
-
-                    <li data-toggle="collapse" data-target="#new" class="collapsed">
-                        <a href="#"><i class="fas fa-envelope"></i></a>
-                    </li>
-                    <li>
-                        <a href="#">
-                           <i class="far fa-star"></i>
-                        </a>
-                    </li>
-                </ul>
+            <div class="map-container">
+                <div id="map"></div>
             </div>
         </div>
-
-        <!-- Page Content -->
-        <section class="py-5">
-
-        </section>
-
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="container">
-                <p class="m-0 text-center text-white">&copy; Gospo 2017</p>
-            </div>
-            <!-- /.container -->
-        </footer>
+        <script>
+                    $('.left_inner').resizable();
+        </script>
     </body>
 </html>
